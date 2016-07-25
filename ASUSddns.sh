@@ -144,9 +144,9 @@ else
     echo "console   --> console"
     echo "silent    --> mute output"
     echo
-    echo "example to register and update testetstest.asuscomm.com:"
-    echo "$0 00:11:22:33:44:55 12345678 testetstest register console"
-    echo "$0 00:11:22:33:44:55 12345678 testetstest update logger"
+    echo "example to register and update testestest.asuscomm.com:"
+    echo "$0 00:11:22:33:44:55 12345678 testestest register console"
+    echo "$0 00:11:22:33:44:55 12345678 testestest update logger"
     echo
     echo "Launch 'register' the first time to register the new domain with your mac address."
     echo "Launch 'update' each 10 minutes (eg: with cron jobs) to keep dns updated."
