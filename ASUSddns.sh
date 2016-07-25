@@ -133,7 +133,7 @@ if [ $# -eq 5 ]
 then
    main $1 $2 $3 $4 $5
 else
-    echo "Usage: mac key host (update|register) (logger|console|silent)"
+    echo "Usage: mac key host (register|update) (logger|console|silent)"
     echo
     echo "mac format: 00:11:22:33:44:55     (asus mac address) [to get it from nvram: nvram get et0macaddr]"
     echo "key format: 12345678              (your wps code) [to get it from nvram: nvram get secret_code]"
