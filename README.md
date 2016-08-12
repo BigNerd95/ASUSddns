@@ -10,7 +10,7 @@ You can enable jffs on your router or save the script on a usb drive attached to
 `./ASUSddns.sh mac key host (register|update) (logger|console|silent)`
 
 #### mac
-Mac address of wan interface and is used as username.
+Mac address of wan interface, it is used as username.
 
 It must be an asus mac address or the request will fails.
 
@@ -30,7 +30,7 @@ To get the wps run:
 #### host
 Host is the hostname you want without .asuscomm.com part.
 
-For example if you wan testestest.asucomm.com,
+For example if you want testestest.asucomm.com,
 
 you have to write only `testestest`.
 

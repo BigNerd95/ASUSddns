@@ -56,7 +56,7 @@ code_to_string(){
         200 )
             echo "$log_mode success."
             ;;
-        203 )
+        203 | 233 )
             echo "$log_mode failed."
             ;;
         220 )
@@ -64,9 +64,6 @@ code_to_string(){
             ;;
         230 )
             echo "$log_mode new domain success."
-            ;;
-        233 )
-            echo "$log_mode failed."
             ;;
         297 )
             echo "Invalid hostname."
