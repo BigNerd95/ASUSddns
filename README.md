@@ -1,46 +1,31 @@
 # ASUSddns
-Asus ddns update and registration script for DD-WRT and others platforms.
-
-This script allows you to use the Asus ddns service on Asus router with a modified firmware like DD-WRT or OpenWRT.
-
-You can enable jffs on your router or save the script on a usb drive attached to the router.
-
+Asus ddns update and registration script for DD-WRT and others platforms.  
+This script allows you to use the Asus ddns service on Asus router with a modified firmware like DD-WRT or OpenWRT.  
+You can enable jffs on your router or save the script on a usb drive attached to the router.  
 
 # Usage
-`./ASUSddns.sh mac wps host (register|update) (logger|console|silent)`
+`./ASUSddns.sh mac wps host (register|update) (logger|console|silent)`  
 
 #### mac
-Mac address of wan interface, it is used as username.
-
-It must be an asus mac address or the request will fails.
-
-To get it, launch:
-
-`nvram get et0macaddr`
-
+Mac address of wan interface, it is used as username.  
+It must be an asus mac address or the request will fails.  
+To get it, launch:  
+`nvram get et0macaddr`  
 
 #### wps
-Wps pin code.
-
-To get it, launch:
-
-`nvram get secret_code`
-
+Wps pin code.  
+To get it, launch:  
+`nvram get secret_code`  
 
 #### host
-Host is the hostname you want without .asuscomm.com part.
-
-For example if you want testestest.asucomm.com,
-
-you only have to write `testestest`.
-
+Host is the hostname you want without .asuscomm.com part.  
+For example if you want testestest.asucomm.com,  
+you only have to write `testestest`.  
 
 #### action
-- register
-
+- register  
   This action is needed only once, to register a new hostname with your Asus mac address.
-- update
-
+- update  
   This action is needed all the times you need to update the dns with your new wan ip.
 
 
