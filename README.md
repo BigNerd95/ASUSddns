@@ -30,16 +30,13 @@ you only have to write `testestest`.
 
 
 #### output
-- logger
-
-  Prints script output on the system log.
-  (On ddwrt: /var/log/messages)
-- console
-
-  Prints script output on stderr.
-- silent
-
-  Disable script output.
+- logger  
+  Prints script output on the system log.  
+  (On ddwrt: /var/log/messages)  
+- console  
+  Prints script output on stderr.  
+- silent  
+  Disable script output.  
 
 # Examples
 #### Register a new dns (testestest.asuscomm.com)
