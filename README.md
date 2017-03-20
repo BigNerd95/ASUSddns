@@ -18,7 +18,7 @@ To get it, launch:
 `nvram get et0macaddr`  
 
 #### wps
-Wps pin code.  
+Wps pin code, it is used to calculate the password.  
 To get it, launch:  
 `nvram get secret_code`  
 
@@ -31,8 +31,8 @@ you only have to write `testestest`.
 - register  
   This action is needed only once, to register a new hostname with your Asus mac address.
 - update  
-  This action is needed all the times you need to update the dns with your new wan ip.
-
+  This action is needed all the times you need to update the hostname with your new wan ip.  
+  (The hostname is checked locally before sending an update request to the asus server)
 
 #### output
 - logger  
