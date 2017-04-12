@@ -57,3 +57,6 @@ you only have to write `testestest`.
 
 # Dependences
 Openssl, curl
+
+## Slim version
+If the firmware doesn't satisfy the dependences, check out the [slim version](https://github.com/BigNerd95/ASUSddns/tree/master/slim)  
