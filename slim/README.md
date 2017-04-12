@@ -2,7 +2,7 @@
 Some firmware may not satisfy the dependences of the complete version  
 This is a slim version to allow anyone to use this feature
 
-### PORS
+### PROS
 - doesn't require curl  
 - doesn't require openssl 
 - doesn't require cron jobs
