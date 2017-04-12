@@ -145,7 +145,7 @@ usage(){
     echo "Launch 'register' the first time to register the new domain with your mac address."
     echo "Launch 'update' each 5 minutes (eg: with cron jobs or a bash script with a while loop and a sleep 300) to keep dns updated."
     echo
-    echo "ASUSddns slim script by BigNerd95 (https://github.com/BigNerd95/ASUSddns/slim)"
+    echo "ASUSddns slim script by BigNerd95 (https://github.com/BigNerd95/ASUSddns/tree/master/slim)"
 }
 
 if [ $# -eq 4 ]
