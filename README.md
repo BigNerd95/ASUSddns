@@ -3,12 +3,12 @@ Asus ddns update and registration script for DD-WRT and others platforms.
 This script allows you to use the Asus ddns service on Asus router with a modified firmware like DD-WRT or OpenWRT.  
 You can enable jffs on your router or save the script on a usb drive attached to the router.  
 
-# Installation
+## Installation
 
 `curl https://raw.githubusercontent.com/BigNerd95/ASUSddns/master/ASUSddns.sh -O -k`  
 `chmod 777 ASUSddns.sh`  
 
-# Usage
+## Usage
 `./ASUSddns.sh mac wps host (register|update) (logger|console|silent)`  
 
 #### mac
@@ -43,7 +43,7 @@ you only have to write `testestest`.
 - silent  
   Disable script output.  
 
-# Examples
+## Examples
 #### Register a new dns (testestest.asuscomm.com)
 `./ASUSddns.sh 00:11:22:33:44:55 12345678 testestest register console`
 
@@ -55,8 +55,11 @@ you only have to write `testestest`.
 
 (DD-WRT: add this line in Administration -> Management -> Cron)
 
-# Dependences
+## Dependences
 Openssl, curl
+
+## Reference  
+[ASUS Source Code](https://github.com/RMerl/asuswrt-merlin/blob/master/release/src/router/ez-ipupdate/asus_ddns.c)
 
 ## Slim version
 If the firmware doesn't satisfy the dependences, check out the [slim version](https://github.com/BigNerd95/ASUSddns/tree/master/slim)  
