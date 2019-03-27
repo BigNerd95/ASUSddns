@@ -58,9 +58,10 @@ you only have to write `testestest`.
 ## Dependences
 Openssl, curl
 
-## Reference  
-[ASUS Source Code](https://github.com/RMerl/asuswrt-merlin/blob/master/release/src/router/ez-ipupdate/asus_ddns.c)  
-[ASUS NG Source Code](https://github.com/RMerl/asuswrt-merlin.ng/blob/master/release/src/router/ez-ipupdate/asus_ddns.c)  
+## Reference (ASUS Source Code) 
+[ez-ipupdate](https://github.com/RMerl/asuswrt-merlin/blob/master/release/src/router/ez-ipupdate/asus_ddns.c)  
+[ez-ipupdate NG](https://github.com/RMerl/asuswrt-merlin.ng/blob/master/release/src/router/ez-ipupdate/asus_ddns.c)  
+[inadyn plugin](https://github.com/RMerl/asuswrt-merlin.ng/blob/master/release/src/router/inadyn/plugins/asuscomm.c)
 
 ## Slim version
 If the firmware doesn't satisfy the dependences, check out the [slim version](https://github.com/BigNerd95/ASUSddns/tree/master/slim)  
