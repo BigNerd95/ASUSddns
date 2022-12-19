@@ -21,8 +21,13 @@ asus_request(){
             local path="ddns/update.jsp"
             ;;
     esac
-
-    echo $(echo -e -n "GET /$path?hostname=$host&myip=$wanIP HTTP/1.1\r\nHost: ns1.asuscomm.com\r\nAuthorization: Basic $user_base64\r\n\r\n" | nc -w 5 ns1.asuscomm.com 80 | head -1 | cut -d ' ' -f 2)
+    if [ "$(nvram get ipv6_service)" != "disabled" ]; then
+        wanIPv6=$(nvram get ipv6_rtr_addr)
+        if [ "$wanIPv6" != "" ];then
+            wanIPv6="&myipv6=$wanIPv6"
+        fi
+    fi
+    echo $(echo -e -n "GET /$path?hostname=$host&myip=$wanIP$wanIPv6 HTTP/1.1\r\nHost: ns1.asuscomm.com\r\nAuthorization: Basic $user_base64\r\n\r\n" | nc -w 5 ns1.asuscomm.com 80 | head -1 | cut -d ' ' -f 2)
 }
 
 get_wan_ip(){
