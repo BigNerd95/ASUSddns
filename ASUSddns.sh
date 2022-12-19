@@ -10,7 +10,13 @@ asus_request(){
             ;;
     esac
     local password=$(calculate_password)
-    echo $(curl --write-out %{http_code} --silent --output /dev/null --user-agent "ez-update-3.0.11b5 unknown [] (by Angus Mackay)" --basic --user $user:$password "http://ns1.asuscomm.com/$path?hostname=$host&myip=$wanIP")
+    if [ "$(nvram get ipv6_service)" != "disabled" ]; then
+        wanIPv6=$(nvram get ipv6_rtr_addr)
+        if [ "$wanIPv6" != "" ];then
+            wanIPv6="&myipv6=$wanIPv6"
+        fi
+    fi
+    echo $(curl --write-out %{http_code} --silent --output /dev/null --user-agent "ez-update-3.0.11b5 unknown [] (by Angus Mackay)" --basic --user $user:$password "http://ns1.asuscomm.com/$path?hostname=$host&myip=$wanIP$wanIPv6")
 }
 
 calculate_password(){
